@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jakubstefko/get-numeral/issues"
   },
-  "homepage": "https://github.com/jakubstefko/get-numeral#readme"
+  "homepage": "https://github.com/jakubstefko/get-numeral#readme",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
 }
