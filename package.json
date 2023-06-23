@@ -1,0 +1,20 @@
+{
+  "name": "get-numeral",
+  "version": "1.0.0",
+  "description": "Get numeral function supporting multiple languages",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakubstefko/get-numeral.git"
+  },
+  "keywords": [
+    "numeral",
+    "typescript"
+  ],
+  "author": "Jakub Stefko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakubstefko/get-numeral/issues"
+  },
+  "homepage": "https://github.com/jakubstefko/get-numeral#readme"
+}

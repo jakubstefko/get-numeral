@@ -1,11 +1,11 @@
 import { pl, en } from './functions';
 import { SupportedLanguage } from './languages';
 
-const getNumeral = (n: number, lng: SupportedLanguage, isDashAdded = false) => {
-  if (!Number.isInteger(n)) return n.toString();
+const getNumeral = (n: number, lng: string = SupportedLanguage.en, isDashAdded = false) => {
+  if (!Number.isInteger(n) || !(lng in SupportedLanguage )) return n.toString();
 
   switch (lng) {
-    case 'pl': return pl(n, isDashAdded)
+    case SupportedLanguage.pl: return pl(n, isDashAdded)
     default: return en(n, isDashAdded)
   }
 }

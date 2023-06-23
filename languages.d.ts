@@ -1,1 +1,4 @@
-export type SupportedLanguage = "en" | "pl"
+export enum SupportedLanguage {
+  en = "en",
+  pl = "pl"
+}
