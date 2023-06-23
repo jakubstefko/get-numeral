@@ -2,7 +2,11 @@
   "name": "get-numeral",
   "version": "1.0.0",
   "description": "Get numeral function supporting multiple languages",
-  "main": "index.ts",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jakubstefko/get-numeral.git"
