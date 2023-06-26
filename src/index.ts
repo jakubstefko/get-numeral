@@ -1,5 +1,5 @@
 import { pl, en } from './functions';
-import { SupportedLanguage } from './languages';
+import { SupportedLanguage } from './languages.d';
 
 const getNumeral = (n: number, lng: string = SupportedLanguage.en, isDashAdded = false) => {
   if (!Number.isInteger(n) || !(lng in SupportedLanguage )) return n.toString();
