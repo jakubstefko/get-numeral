@@ -8,6 +8,7 @@ This is repository with code for `get-numeral` library which is aiming to provid
 
 * english
 * polish
+* german
 
 ## Contributions
 
