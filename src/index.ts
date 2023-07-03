@@ -1,5 +1,4 @@
-import { pl, en, de } from './functions';
-import { se } from './functions/se';
+import { pl, en, de, se } from './functions';
 import { SupportedLanguage } from './languages.d';
 
 const getNumeral = (n: number, lng: string = SupportedLanguage.en, isDashAdded = false) => {
