@@ -1,4 +1,5 @@
 import { pl, en, de } from './functions';
+import { se } from './functions/se';
 import { SupportedLanguage } from './languages.d';
 
 const getNumeral = (n: number, lng: string = SupportedLanguage.en, isDashAdded = false) => {
@@ -7,6 +8,7 @@ const getNumeral = (n: number, lng: string = SupportedLanguage.en, isDashAdded =
   switch (lng) {
     case SupportedLanguage.pl: return pl(n, isDashAdded)
     case SupportedLanguage.de: return de(n, isDashAdded)
+    case SupportedLanguage.se: return se(n, isDashAdded)
     default: return en(n, isDashAdded)
   }
 }
