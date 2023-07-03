@@ -10,6 +10,8 @@ This is repository with code for `get-numeral` library which is aiming to provid
 * polish (i.e. 1 => 1szy)
 * german (i.e. 1 => 1ste)
 * swedish (i.e. 1 => 1.a)
+* norwegian (i.e. 1 => 1.)
+* danish  (i.e. 1 => 1.)
 
 ## Contributions
 
