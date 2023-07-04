@@ -1,8 +1,11 @@
-export const se = (n: number, isDashAdded: boolean) => {
-  const lastDigit = n.toString().slice(-1);
-  const core = `${n}${isDashAdded ? '-' : ''}`;
+import { Contexts } from '../types';
 
-  if (n === 11 || n === 12) return `${core}.e`;
-  if (lastDigit === '1' || lastDigit === '2') return `${core}.a`;
-  return `${core}.e`;
+export const se = (n: number, context?: Contexts) => {
+  if (context === Contexts.date) return n.toString();
+
+  const lastDigit = n.toString().slice(-1);
+
+  if (n === 11 || n === 12) return `${n}.e`;
+  if (lastDigit === '1' || lastDigit === '2') return `${n}.a`;
+  return `${n}.e`;
 };

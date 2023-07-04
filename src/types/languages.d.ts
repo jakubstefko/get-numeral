@@ -1,4 +1,4 @@
-export enum SupportedLanguage {
+export enum SupportedLanguages {
   en = 'en',
   pl = 'pl',
   de = 'de',

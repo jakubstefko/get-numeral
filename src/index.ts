@@ -1,26 +1,26 @@
 import { pl, en, de, se } from './functions';
-import { SupportedLanguage } from './languages.d';
+import { Contexts, SupportedLanguages } from './types';
 
 const getNumeral = (
   n: number,
-  lng: string = SupportedLanguage.en,
-  isDashAdded = false
+  lng: string = SupportedLanguages.en,
+  context?: Contexts
 ) => {
-  if (!Number.isInteger(n) || !(lng in SupportedLanguage)) return n.toString();
+  if (!Number.isInteger(n) || !(lng in SupportedLanguages)) return n.toString();
 
   switch (lng) {
-    case SupportedLanguage.pl:
-      return pl(n, isDashAdded);
-    case SupportedLanguage.de:
-      return de(n, isDashAdded);
-    case SupportedLanguage.se:
-      return se(n, isDashAdded);
-    case SupportedLanguage.da:
+    case SupportedLanguages.pl:
+      return pl(n);
+    case SupportedLanguages.de:
+      return de(n);
+    case SupportedLanguages.se:
+      return se(n, context);
+    case SupportedLanguages.da:
       return `${n}.`;
-    case SupportedLanguage.no:
+    case SupportedLanguages.no:
       return `${n}.`;
     default:
-      return en(n, isDashAdded);
+      return en(n);
   }
 };
 
